@@ -10,8 +10,8 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        {this.relative.map((rel) => (
-          <p key={rel}>{rel}</p>
+        {this.relative.map((rel, idx) => (
+          <p key={`relativeListItem1${idx}`}>{rel}</p>
         ))}
         fjdishjsfio
       </div>
