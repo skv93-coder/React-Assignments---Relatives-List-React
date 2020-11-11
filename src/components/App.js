@@ -10,10 +10,11 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        {this.relative.map((rel, idx) => (
-          <p key={`relativeListItem1${idx}`}>{rel}</p>
-        ))}
-        fjdishjsfio
+        <ol key="relativeList.">
+          {this.relative.map((rel, idx) => (
+            <li key={`relativeListItem1${idx}`}>{rel}</li>
+          ))}
+        </ol>
       </div>
     );
   }
