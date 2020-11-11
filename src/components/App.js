@@ -12,7 +12,7 @@ class App extends Component {
       <div id="main">
         <ol key="relativeList.">
           {this.relative.map((rel, idx) => (
-            <li key={`relativeListItem1${idx}`}>{rel}</li>
+            <li key={`${rel + idx}`}>{rel}</li>
           ))}
         </ol>
       </div>
